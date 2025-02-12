@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('Meu primeiro teste', () => {
   it('funciona corretamente', () => {
     //Visitar site
@@ -10,5 +12,6 @@ describe('Meu primeiro teste', () => {
     cy.get('.action-email').type('fake@email.com')
     //Verificar se foi digitado corretamente
     cy.get('.action-email').should('have.value', 'fake@email.com')
+    
   })
 })
